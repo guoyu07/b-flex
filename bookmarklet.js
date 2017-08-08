@@ -1,6 +1,6 @@
-(function(){
+(function(w){
 
-  var LOCATION = window.location;
+  var location = w.location;
 
   function isHotelPage(url){
     return url.indexOf('www.booking.com/hotel') > -1 ||
@@ -59,10 +59,11 @@
     return location.protocol +
            "//" + location.host +
            "/"  + location.pathname +
-           '?'  + urlParams;
+           '?'  + urlParams +
+           '#availability';
   }
 
-  function getFlexibleDate(location, days){
+  function goToFlexDate(location, days){
     console.log(location.search);
 
     var params = shiftDateParams(location.search, days);
@@ -73,12 +74,14 @@
     return openTab( url );
   }
 
-  function init(){
-    if( !isHotelPage(LOCATION.href) ){ return };
+  function init(days){
+    if( !isHotelPage(location.href) ){ return; }
 
-    getFlexibleDate(LOCATION, -1);
+    goToFlexDate(location, days);
   }
 
-  init();
+  w.bFlexDates = {
+    init: init
+  };
 
-})();
+})(window);
