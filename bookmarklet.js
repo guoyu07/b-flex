@@ -58,7 +58,7 @@
   function getHotelUrl(url, urlParams){
     return location.protocol +
            "//" + location.host +
-           "/"  + location.pathname +
+           ""  + location.pathname +
            '?'  + urlParams +
            '#availability';
   }
