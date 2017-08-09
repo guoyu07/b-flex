@@ -1,5 +1,12 @@
-# B.Flex
+# B.flex
 
-A simple bookmarklet to find out the day before or a day after is cheaper on Booking.com.
+Bookmarklet to navigate and compare prices between dates on [booking.com](https://booking.com/).
 
-[Click here to get the bookmarklet.](https://tarmann.github.io/b-flex/)
+[Get the bookmarklet](https://tarmann.github.io/b-flex/)
+
+### TODO
+
+* Add the option to navigate between dates on search page
+* Add option to extend length of the stay
+* Move to a chrome extension
+* Track prices visited overtime
