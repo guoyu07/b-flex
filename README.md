@@ -1,8 +1,10 @@
 # B.flex
 
-Bookmarklet to navigate and compare prices between dates on [booking.com](https://booking.com/).
+Bookmarklet to navigate and compare prices between dates on [booking.com](https://Booking.com/).
 
 [Get the bookmarklet](https://tarmann.github.io/b-flex/)
+
+![Demo](https://github.com/tarmann/b-flex/blob/master/assets/demo.gif)
 
 ### TODO
 
